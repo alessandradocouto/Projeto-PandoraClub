@@ -38,5 +38,12 @@ O site ainda está em atualização.
 
 
 
-A
+
+
+
+
+
+
+![projeto pandora club Pagina inicial](https://github.com/alessandradocouto/Projeto-PandoraClub/blob/master/pandora_club.jpg)
+
 
