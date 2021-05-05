@@ -33,8 +33,8 @@ Utilizando a técnica de Flexbox e mobile-first construi um layout simples, por�
 Pude conhecer mais o uso do flexbox, mediaqueries, o uso de noopener e noreferrer, e utilizar um efeito com opacidade no menu do site. 
 
 
-### Melhorias
-O site ainda está em atualização.
+
+
 
 
 

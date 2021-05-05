@@ -21,9 +21,9 @@ a:focus {
     box-shadow: 0px 0px 3px 3px aqua;
 }
 
-/* a:visited {
+a:visited {
     color: rgb(187, 99, 199);
-} */
+}
 
 .header-container {
     background-image: url(images/photo-of-bar-neon-signage.jpg);
@@ -183,10 +183,8 @@ a:focus {
 }
 
 .about-bar-container img  {
-    max-width: 17.5em;
-    height: 16.875em;
     margin: 1.5em auto;
-    border-radius: 70% 70%; /* Borda redonda */
+    border-radius: 50%; 
 }
 
 .article-container-title-about {
@@ -197,7 +195,7 @@ a:focus {
     color: rgb(245, 245, 245);
 }
 
-.article-container-subtitle {
+.article-container-text {
     padding: 0.7em;
     line-height: 2;
     text-align: center;
@@ -363,7 +361,6 @@ a:focus {
 }
 
 .article-container-art {
-    border: 5px solid white;
     text-align: center;
     margin-bottom: 1em;
     background-color: rgb(255, 255, 255);
@@ -385,13 +382,6 @@ a:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.section-container-tickets {   /* container dos tickets */
-    background-image: url(images/back-white.png);
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .section-container-tickets-title {
@@ -423,15 +413,15 @@ a:focus {
     align-items: center;
 }
 
-.div-ticket {   /* background-color dos ingressos */
+.div-ticket {
     background-color: rgb(235, 235, 235);
-    margin: 0.1em;
+    margin: 1.25em;
     height: auto;
     max-width: 85%;
     border: 3px solid rgb(124, 124, 124);
 }
 
-.article-container-wrapper-one-num {
+.article-container-wrapper-one-num, .article-container-wrapper-one-tick {
     max-width: 9.375em;
     height: 8.125em;
     padding: 1.2em;
@@ -449,27 +439,33 @@ a:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 15px 50px 30px;
     margin-bottom: 1em;
+}
+
+.article-container-wrapper-one-num{
     background-color: rgb(230, 77, 110);
 }
 
-.article-container-wrapper-one-num span {
+.article-container-wrapper-one-num span, .article-container-wrapper-one-tick span {
     color: rgb(250, 250, 250);
     font-size: 1.375em;
     font-weight: 700;
 }
 
-.button-tickets {
+.button-tickets, .button-two-tickets {
+    text-decoration: none;
     margin: 2em auto;
     text-align: center;
     max-width: 60%;
-    padding: 1.2em 1.9em;
-    background-color: rgb(230, 77, 110);
-    color: white;
+    padding: 1.2em 1.5em;
     border: 1px solid transparent;
-    cursor: pointer;
-    font-weight: 700;
+    color: white;
+    font-weight: 600;
+}
+
+.button-tickets {
+    background-color: rgb(230, 77, 110);
 }
 
 .button-tickets:hover {
@@ -482,45 +478,11 @@ a:focus {
 }
 
 .article-container-wrapper-one-tick {
-
-    max-width: 9.375em;
-    height: 8.125em;
-    padding: 1.2em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 50% ;
-    margin-bottom: 1em;
     background-color: rgb(36, 124, 165);
-}
-
-.article-container-wrapper-one-tick span {
-    color: white;
-    font-size: 1.375em;
-    font-weight: 700;
 }
 
 .button-two-tickets {
-    margin: 2em auto;
-    text-align: center;
-    max-width: 60%;
-    padding: 1.2em 1.9em;
-    border: 1px solid transparent;
     background-color: rgb(36, 124, 165);
-    color: white;
-    cursor: pointer;
-    font-weight: 700;
 }
 
 .button-two-tickets:hover {
@@ -538,7 +500,7 @@ a:focus {
     font-size: 1.625em;
 }
 
-.article-container-wrapper-subtitle {
+.article-container-wrapper-text {
     margin: 0.4em 2.25em;
     text-align: left;
     color: rgb(16, 16, 16);
@@ -549,11 +511,11 @@ a:focus {
     width: 0;
     height: 0;
     overflow: hidden;
-    /* opacity: 0; */
+    opacity: 0;
     display: block;
 }
 
-.section-content-patron {    /* cor do background partners */
+.section-content-patron {
     padding: 0.375em;
     background: black;
     background: -o-linear-gradient( 235deg, black 30%, #ce5063 25%);
@@ -570,7 +532,7 @@ a:focus {
     max-width: 50%;
 }
 
-footer {      /*  footer sem class mesmo */
+footer {
     margin: auto auto 0 auto;
     background-color: rgb(31, 31, 31);
 }
@@ -583,44 +545,18 @@ footer {      /*  footer sem class mesmo */
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 1.5em;  /* container fica com margem estranha no topo */
+    margin: 0 1.5em;
     padding: 1em;
 }
 
-.article-footer-about {
-    -webkit-box-flex: 5;
-    -ms-flex: 5;
-    flex: 5;
-}
-
-.article-footer-cia {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-}
-
-.article-footer-pdct {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-}
-
-.article-footer-social {  
-    -webkit-box-flex: 3;  
-    -ms-flex: 3;  
-    flex: 3;
-}
 
 /*ul*/
 
 .menu-footer {  
     margin: 0;
-    padding: 0;  /* para o bloco roxo ficar centralizado e ocupar todo o espaço */ 
+    padding: 0;
 }
 
 .menu-footer-social {
@@ -634,7 +570,8 @@ footer {      /*  footer sem class mesmo */
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    padding: 0;  /* para o bloco roxo ficar centralizado e ocupar todo o espaço */
+    padding: 0;
+    align-self: center;
 }
 
 .menu-footer li, .menu-footer-social li{
@@ -643,16 +580,11 @@ footer {      /*  footer sem class mesmo */
 }
 
 .menu-footer a, .menu-footer-social a {
-    display: block;   /* transformar em blocos maiores o link do menu footer */
+    display: block;
     margin: 0.5em 1em;
     text-decoration: none;
     font-size: 0.9125em;
     color: white;
-    /* font-weight: 600; */
-}
-
-.menu-footer-social a {
-    display: block;
 }
 
 .menu-footer a:hover, .menu-footer-social a:hover {
@@ -672,7 +604,7 @@ footer {      /*  footer sem class mesmo */
     margin: 1.375em;
 }
 
-.footer-content {    /* Grupo do footer final */
+.footer-content {
     padding: 0.375em;
 }
 
@@ -768,15 +700,9 @@ footer {      /*  footer sem class mesmo */
     .article-container-lineup-one-text {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-        flex-grow: 1;  /* ou flex-grow: 2; */
+        flex-grow: 1;
         -ms-flex-preferred-size: 12.5em;
         flex-basis: 12.5em;
-    }
-  
-    .section-container-tickets {
-        
-        background-position: top center;
-        background-repeat: repeat;
     }
 
 }
@@ -835,21 +761,18 @@ footer {      /*  footer sem class mesmo */
         font-size: 1.2em;
     } 
     
-    .container-lineup-day { /* Data */
+    .container-lineup-day {
         font-size: 1em;
     }
 
     .about-bar-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
@@ -873,19 +796,6 @@ footer {      /*  footer sem class mesmo */
 
     .article-container-ready-group-title {
         font-size: 2.4em;
-    }
-
-    .about-bar-container img {
-        -ms-flex-preferred-size: 15.625em;
-        flex-basis: 15.625em;
-    }
-
-    .article-container-subtitle {
-        -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
-        -ms-flex-preferred-size: 15.625em;
-        flex-basis: 15.625em;
     }
 
     .lineup-title{
@@ -937,12 +847,18 @@ footer {      /*  footer sem class mesmo */
     .article-container-art {
         margin-left: 0.3em;
     }
-       
+
     .footer-container-group {   
         -webkit-box-orient: horizontal;   
         -webkit-box-direction: normal;   
         -ms-flex-direction: row;   
         flex-direction: row;
+    }
+
+    .article-footer-about {
+        flex-shrink: 5;
+        flex-grow: 5;
+        flex-basis: 0;
     }
 
 }
@@ -957,7 +873,7 @@ footer {      /*  footer sem class mesmo */
     }
 
     .header-content {
-        /* margin-bottom: 2em; */   /* afastar a borda do bloco transparente preto do walpaper */
+        margin-bottom: 2em;   /* afastar a borda do bloco transparente preto do walpaper */
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
