@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 *{
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -106,9 +105,6 @@ a:visited {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -145,14 +141,14 @@ a:visited {
     text-align: center;
     width: 60%;
     padding: 1.1em;
-    color: rgb(226, 17, 62);
+    color: rgb(228, 61, 97);
     background-color: white;
     font-size: 1.2em;
     font-weight: 600;
 }
 
 .header-content-tickets:hover {
-    background-color: rgb(226, 17, 62);
+    background-color: rgb(196, 75, 102);
     color: white;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -161,7 +157,7 @@ a:visited {
 
 .about-bar-group-container {
     padding: 0.375em;
-    background-color: rgb(16, 16, 16); 
+    background-color: rgb(16, 16, 16);
 }
 
 .about-bar-container {
@@ -444,7 +440,7 @@ a:visited {
 }
 
 .article-container-wrapper-one-num{
-    background-color: rgb(230, 77, 110);
+    background-color: rgb(196, 75, 102);
 }
 
 .article-container-wrapper-one-num span, .article-container-wrapper-one-tick span {
@@ -465,7 +461,7 @@ a:visited {
 }
 
 .button-tickets {
-    background-color: rgb(230, 77, 110);
+    background-color: rgb(196, 75, 102);
 }
 
 .button-tickets:hover {
@@ -518,8 +514,8 @@ a:visited {
 .section-content-patron {
     padding: 0.375em;
     background: black;
-    background: -o-linear-gradient( 235deg, black 30%, #ce5063 25%);
-    background: linear-gradient( 215deg, black 30%, #ce5063 25%);
+    background: -o-linear-gradient( 235deg, black 30%, #e4687a 25%);
+    background: linear-gradient( 215deg, black 30%, #df6376 25%);
 }
 
 .section-content-patron-title {
@@ -588,7 +584,7 @@ footer {
 }
 
 .menu-footer a:hover, .menu-footer-social a:hover {
-    color: rgb(230, 19, 89);
+    color: rgb(196, 75, 102);
 }
 
 .article-footer-about h3, .article-footer-cia h3, .article-footer-pdct h3, .article-footer-social h3 {
@@ -615,12 +611,12 @@ footer {
 }
 
 .footer-content-design {
-    color: rgb(230, 19, 89);
+    color: rgb(192,75,102);
     text-decoration: none;
 }
 
 .footer-content-design:hover {
-    color: orangered;
+    color: rgb(226, 91, 41);
     text-decoration: none;
 }
 
@@ -670,8 +666,8 @@ footer {
     .header-content-title, .header-content p {
         width: 65%;
         -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     }
 
     .header-content-tickets { 
@@ -711,10 +707,11 @@ footer {
 /* Media Queries 768px */
 
 @media screen and (min-width: 48em) {
-    
+
     .menu-nav {
         display:flex;
     }
+    
     .menu-nav-logo{
         margin-right: auto;
         padding: 0.3em;
@@ -749,6 +746,7 @@ footer {
         width: 45%;
         min-height: 37em;
         background-color: rgba(0, 0, 0, 0.63);
+        
     }
 
     .header-content-title {
@@ -766,7 +764,6 @@ footer {
     }
 
     .about-bar-container {
-        
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         -webkit-box-orient: horizontal;
@@ -873,7 +870,6 @@ footer {
     }
 
     .header-content {
-        margin-bottom: 2em;   /* afastar a borda do bloco transparente preto do walpaper */
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
