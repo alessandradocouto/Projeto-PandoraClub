@@ -10,11 +10,11 @@ https://alessandradocouto.github.io/Projeto-PandoraClub/
 
 Pude conhecer mais o uso do flexbox, mediaqueries, o uso de noopener e noreferrer, e utilizar um efeito com opacidade no menu do site. 
 
-##### Status 🎲: 
+### Status 👓: 
 
 ✅ Concluído
 
-####Este projeto está licenciado nos termos da licença MIT 📌
+Este projeto está licenciado nos termos da licença MIT 📌
 
 ![projeto pandora club Pagina inicial](https://github.com/alessandradocouto/Projeto-PandoraClub/blob/master/pandora_club.jpg)
 
